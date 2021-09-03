@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html>
     <style>
+     header{
+       width: 100%;
+       height: 30px;
+            margin-top: 15px;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+     }
+     header *{
+              margin: 8px;
+               font-size: 14px;
+               
+     }
+     p{
+       text-align:center;
+     }
 
+     #GoogleLogo
+           {
+               width: 100%;
+               margin-top:200px;
+               margin-bottom: 30px;;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+           }
+      #Searchbar
+      {
+                display: block;
+                margin: 0 auto;
+                width:55%;
+                height: 40px;
+                border: 1px solid #dadce0;
+                border-radius: 25px;
 
+      }
+      #belowsearchbarbuttons 
+           {
+               display:flex;
+               flex-direction: row;
+               justify-content: center;
+               margin: 20px 10px 10px 10px;
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           #belowsearchbarbuttons *
+           {
+               justify-content: center;
+               margin: 8px;
+               padding:10px;
+               color:#3c4043;
+               background-color:#f8f9fa;
+               border: 1px solid transparent;
+               border-radius: 5px;
+               font-size: 15px;
+           }
+           #belowsearchbarbuttons *:hover{
 
+               border: 2px solid #dadce0;
+           }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    </style>
+      </style>
     
     <body>
         <header>
@@ -27,13 +73,14 @@
         <div>Images</div>
         <button>Sign in</button>
         </header>
-        <div>
+        <div id="GoogleLogo">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="GOGGLE LOGO"> 
         </div>
-        <div class="nav">
-            <input type="text" placeholder="Search">
+        <div id="Searchbar">
+            <input type="text">
+            
           </div> 
-          <div>
+          <div id="belowsearchbarbuttons">
               <button>Google Search</button>
               <button>I'm Feeling Lucky</button>
           </div>
